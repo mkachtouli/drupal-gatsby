@@ -10,15 +10,15 @@ const news = ({ data }) => (
     <SEO title="News" />
     <div>
         {data.allNodeActualites.edges.map(({node}) => {
-            // console.log('test : ' + node.title);
+            var dots = "";
+            if (node.body.processed.length > 100) {
+              var dots = "...";
+            }
             return (
                 <div key={node.id}>
                     <h2>{node.title}</h2>
-                    <div dangerouslySetInnerHTML={{__html:node.body.processed}} />
-                    {/* <Img
-                        fixed={node.relationships.field_photos.localFile.childImageSharp.original}
-                        alt="Gatsby Docs are awesome"
-                    /> */}
+                <div dangerouslySetInnerHTML={{__html:node.body.processed.substring(0, 100) + dots }} />
+                
                 </div>
             )
         })}
