@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `http://fornetpwa.fornetmaroc.com:811`
+        baseUrl: `http://fornetpwa.fornetmaroc.com:8118`
       },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
