@@ -4,6 +4,9 @@ var plugins = [{
     },{
       plugin: require('C:/xampp/htdocs/fornetwa-drupal-gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#0071b8","theme_color":"#0071b8","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
+    },{
+      plugin: require('C:/xampp/htdocs/fornetwa-drupal-gatsby/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
