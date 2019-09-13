@@ -8,9 +8,15 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h2>Welcome Drupal & Gatsby site "MK version"</h2>
-    <Link to="/news">Go to news page</Link>
+      <div className="App">
+        <h2>Welcome Drupal & Gatsby site "MK version"</h2>
+        <Link to="/news">Go to news page</Link>
+      </div>
   </Layout>
+
+
+
+
 )
 
 export default IndexPage
