@@ -33,8 +33,16 @@ module.exports = {
         baseUrl: `http://fornetpwa.fornetmaroc.com:8118`
       },
     },
+    {
+      // Note: this plugin is coded to only work on production
+      resolve: `gatsby-plugin-subscribers`,
+      options: {
+        id: 'your subscribersSiteId goes here',
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
 }
+ 
