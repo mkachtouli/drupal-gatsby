@@ -13,7 +13,7 @@ export const onServiceWorkerUpdateFound = () => {
               navigator.serviceWorker.ready.then(registration => {
                   registration.showNotification('Update', {
                       body: 'New content is available!',
-                      icon: 'link-to-your-icon',
+                      icon: 'src/images/gatsby-icon.png',
                       vibrate: [200, 100, 200, 100, 200, 100, 400],
                       tag: 'request',
                       actions: [ // you can customize these actions as you like
